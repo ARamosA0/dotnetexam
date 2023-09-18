@@ -1,0 +1,24 @@
+@page 
+@model IndexModel
+@{
+   ViewData["Title"] = ".NET Pizza Co.";
+   @* string PokemonName =""; *@
+}
+
+<div class="text-center">
+    @* <h1 class="display-4">@PokemonName</h1> *@
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* <input type="text" @bind="pokemonName" placeholder="Escribe el nombre del Pokémon">
+<button @onclick="BuscarPokemon">Buscar</button> *@
+
+
+<div style="color: #D8000C; background-color: #FFBABA">
+  @Model.ErrorMessage
+</div> 
+<div>
+<h1 class="display-4">@Model.Pizzas.Name</h1>
+   <img src="@Model.Pizzas.Imagen" />
+
+</div>
